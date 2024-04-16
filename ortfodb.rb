@@ -16,7 +16,7 @@ class Ortfodb < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ortfo/db/releases/download/v1.4.0/ortfodb_Darwin_x86_64.tar.gz"
-      sha256 "260edf1b8281ac8f1bfba904ae37d34b02dc94e00dbc306c46971f0b32677b4c"
+      sha256 "af956f6e342198c7a76ad975d703cae8db8381ee94f0b5c28d8d88e62735d6d9"
 
       def install
         bin.install "ortfodb_darwin_amd64"
@@ -24,7 +24,7 @@ class Ortfodb < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ortfo/db/releases/download/v1.4.0/ortfodb_Darwin_arm64.tar.gz"
-      sha256 "5a4919e77a9a0f970960024cd839309d1f1f48607dc5bd999a539fa03488494a"
+      sha256 "260bf9d731fe04db28b0a9544740db3b72d11f504ebb8e86bf5a0c92b4ba4e49"
 
       def install
         bin.install "ortfodb_darwin_arm64"
@@ -35,7 +35,7 @@ class Ortfodb < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/ortfo/db/releases/download/v1.4.0/ortfodb_Linux_x86_64.tar.gz"
-      sha256 "b502f91958f65e764f3047fb5d6ba0f714390bb54979aae6dd8ab2e76f99d991"
+      sha256 "cc389b2b0fb65f8090dc5072dc0dbec8cd8a315ce4752e4f039f4b24138a5e87"
 
       def install
         bin.install "ortfodb_linux_amd64"
@@ -43,7 +43,7 @@ class Ortfodb < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ortfo/db/releases/download/v1.4.0/ortfodb_Linux_arm64.tar.gz"
-      sha256 "968d65cfeb4f5b96e798da21d0fa902ed02256a3fb26fb845523a6ac38a6a8fa"
+      sha256 "c42b439dbd39b070e4ea375bff469840772b997dc9f04309423f3d73f5f52a20"
 
       def install
         bin.install "ortfodb_linux_arm64"
