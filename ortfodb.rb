@@ -5,7 +5,7 @@
 class Ortfodb < Formula
   desc "A readable, easy and enjoyable way to manage portfolio databases using directories and text files."
   homepage "https://ortfo.org"
-  version "1.6.0"
+  version "1.6.1"
   license "MIT"
 
   depends_on "ffmpeg"
@@ -16,16 +16,16 @@ class Ortfodb < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ortfo/db/releases/download/v1.6.0/ortfodb_Darwin_x86_64.tar.gz"
-      sha256 "030933c58fbc232fc9e7fc2d9c62fe5bed2a4bd2051de35ae4a073dc6fd99b83"
+      url "https://github.com/ortfo/db/releases/download/v1.6.1/ortfodb_Darwin_x86_64.tar.gz"
+      sha256 "a19cb1c2d37a74979e4d4b127f3d3bf917652b6384f9c01893fa81b8aacc9759"
 
       def install
         bin.install "ortfodb_darwin_amd64"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ortfo/db/releases/download/v1.6.0/ortfodb_Darwin_arm64.tar.gz"
-      sha256 "573cebea1cee60c8e22b7e783864b7f2110a814f4dfdcf2c5bd1c85d64a357a7"
+      url "https://github.com/ortfo/db/releases/download/v1.6.1/ortfodb_Darwin_arm64.tar.gz"
+      sha256 "d2f0c76d92b336e676fd121ab1d7cc86eae20068b7ea5b0e58183d95833903df"
 
       def install
         bin.install "ortfodb_darwin_arm64"
@@ -35,16 +35,16 @@ class Ortfodb < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ortfo/db/releases/download/v1.6.0/ortfodb_Linux_x86_64.tar.gz"
-      sha256 "e7f8d3bf5667f85b0d93f5f1167a2966fe0990f612e6d166f98dbdf1e5af651b"
+      url "https://github.com/ortfo/db/releases/download/v1.6.1/ortfodb_Linux_x86_64.tar.gz"
+      sha256 "30481bdb7fa1dd6c81e576ee91cd0be5e3efc220d8ac881287940d9323b77151"
 
       def install
         bin.install "ortfodb_linux_amd64"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ortfo/db/releases/download/v1.6.0/ortfodb_Linux_arm64.tar.gz"
-      sha256 "f7478cb7d1974121f00f722a9c337a819c2676506f80a20e52a081c3dc06030b"
+      url "https://github.com/ortfo/db/releases/download/v1.6.1/ortfodb_Linux_arm64.tar.gz"
+      sha256 "224064740c461d9bf7458cf6de2e2a3949cb4c6923489a62010d2da63b31d987"
 
       def install
         bin.install "ortfodb_linux_arm64"
